@@ -1,0 +1,30 @@
+.owl-prev, .owl-next {
+  position: absolute;
+  left: 20px; /* Distance from the left edge for both buttons */
+  background-color: transparent; /* Transparent background */
+  border: 2px solid #fff; /* White border */
+  width: 40px; /* Button size */
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  color: #fff; /* Icon color */
+  font-size: 18px; /* Icon size */
+  cursor: pointer;
+  margin-bottom: 10px; /* Space between the buttons */
+  top: 30%; /* Adjust top for initial positioning */
+  transform: translateY(-100%); /* Moves the first button up */
+  left:50%;
+}
+
+.owl-next {
+  top: -30px; /* Adjusts the top position for the next button to stack under the previous button */
+}
+.owl-prev:hover, .owl-next:hover {
+  background-color: transparent; /* No background color change on hover */
+}
+
+.owl-prev i, .owl-next i {
+  font-size: 18px; /* Adjust the icon size */
+}

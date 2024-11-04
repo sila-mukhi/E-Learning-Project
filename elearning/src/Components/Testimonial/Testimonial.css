@@ -1,0 +1,35 @@
+/* Testimonial image as a circle */
+.vg {
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Centering the image and text */
+}
+
+.vg img {
+  width: 80px !important;   /* Adjust this value as needed for a larger circle */
+  height:80px !important; /* Same as width for a perfect circle */
+  border-radius: 50%; /* Makes the image circular */
+  border: 1px solid #6c757d; /* Optional: Add a border for a nicer look */
+  padding: 5px;
+}
+
+/* Make buttons show on all device sizes */
+.owl-carousel .owl-dots {
+  display: block !important; /* Ensures the dots are always visible */
+  text-align: center;
+  margin-top: 20px;
+}
+
+.owl-carousel .owl-dot {
+  display: none;
+  width: 12px; /* Adjusted smaller size for the dot */
+  height: 12px; /* Same as width to keep the dots circular */
+  margin: 5px;
+  background: #ddd;
+  border-radius: 50%;
+}
+
+.owl-carousel .owl-dot.active {
+  background-color: #007bff; 
+}

@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+}
+
+
+.icon {
+    font-size: 2rem;
+    color: #007bff;
+    margin-right: 0.5rem;
+}
+
+.brand-name {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    padding: 1rem;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #007bff;
+    
+}
+
+/* Dropdown Menu Styles */
+.dropdown-menu {
+    display: none; /* Initially hidden */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
+    z-index: 1000;
+    min-width: 200px; /* Minimum width for the dropdown */
+    padding: 0.5rem 0; /* Padding for the dropdown */
+    flex-direction: column; /* Stack items vertically */
+    display: flex; /* Use flex to apply column direction */
+}
+
+.dropdown-item {
+    padding: 0.75rem 1.25rem; /* Increased padding for better touch targets */
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+.dropdown-menu{
+    display: none;
+}
+.dropdown-item:hover {
+    background-color: #007bff; /* Background color on hover */
+    color: #ffffff; /* Text color on hover */
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: flex; /* Show dropdown as flex container on hover */
+}
+
+/* Navbar Toggler */
+.navbar-toggler {
+    border: none;
+    background: transparent;
+}
+
+.navbar-toggler-icon {
+    background-color: #007bff; /* Color of the toggle icon */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 1rem;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-item {
+        text-align: center;
+    }
+}
+.register{
+    display: flex;
+    column-gap: 20px;
+    justify-content: center;
+}
+.navbar .logout{
+    margin-left: 25px;
+}
+.navbar .profile{
+    width:40px;
+    margin-left: 25px;
+}

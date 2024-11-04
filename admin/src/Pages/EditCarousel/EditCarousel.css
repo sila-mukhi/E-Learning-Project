@@ -1,0 +1,35 @@
+.edit2{
+    width: 70%;
+    margin-left: max(5vw,25px);
+    margin-top: 50px;
+    color:#6d6d6d;
+    font-size: 16px;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+}
+.edit2 form{
+    gap:20px;
+}
+.edit2-img-upload img{
+    width:120px;
+}
+.edit2-product-name , .edit2-product-description{
+    width:max(40%,280px);    
+    }
+    .edit2-product-name input , .edit2-product-description textarea{
+        padding: 10px;
+    }
+
+.update-btn2{
+    max-width: 120px;
+    border: none;
+    padding: 10px;
+    background-color: black;
+    color:white;
+    cursor: pointer;
+}
+
