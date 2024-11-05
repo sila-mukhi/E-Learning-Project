@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 
 const ListInstructor = () => {
 
-  const url = "http://localhost:4300";
+  const url = "https://e-learning-project-backend.onrender.com";
 
   const [instructor, setInstructor] = useState([]);
 
