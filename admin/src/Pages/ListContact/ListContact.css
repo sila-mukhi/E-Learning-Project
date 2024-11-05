@@ -52,3 +52,30 @@ span{
     display: flex;
     justify-content: center;
 }
+.add5{
+    width: 70%;
+    margin-left: max(5vw,25px);
+    margin-top: 50px;
+    color:#6d6d6d;
+    font-size: 16px;    
+    display: flex;
+    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
+}
+@media(max-width:600px){
+    .list-table-format5{
+        grid-template-columns:0.1fr 0.2fr 0.2fr 0.2fr 0.2fr;
+        gap:15px;
+    }
+    .list-table-format5.title{
+        /* grid-template-columns: 0fr 0.2fr 0.2fr 0.2fr 0.2fr;
+        gap:15px; */
+        display: none;
+    }
+    .add5{
+        width:100%;
+        justify-content: flex-start;
+        margin:5px;
+    }
+}

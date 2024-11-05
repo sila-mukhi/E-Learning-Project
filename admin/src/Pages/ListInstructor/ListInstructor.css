@@ -48,7 +48,31 @@
     /* text-align: center; */
 
 }
-/* .just-center5{
+.add6{
+    width: 70%;
+    margin-left: max(5vw,25px);
+    margin-top: 50px;
+    color:#6d6d6d;
+    font-size: 16px;    
     display: flex;
     justify-content: center;
-} */
+    /* display: flex;
+    justify-content: center; */
+}
+@media(max-width:600px){
+    .list-table-format6{
+        grid-template-columns: 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
+        gap:15px;
+    }
+    .list-table-format6.title{
+        /* grid-template-columns: 0fr 0.2fr 0.2fr 0.2fr 0.2fr;
+        gap:15px; */
+        display: none;
+    }
+    .add6{
+        width:100%;
+        justify-content: flex-start;
+        margin:5px;
+    }
+}
+

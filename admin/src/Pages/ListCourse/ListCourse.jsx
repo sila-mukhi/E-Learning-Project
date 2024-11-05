@@ -41,7 +41,7 @@ const ListCourse = ({ url }) => {
   }, []);
 
   return (
-    <div className='list add flex-col'>
+    <div className='list add1 flex-col'>
       <div className='add-course'>
         <span>All Courses List</span>
         <Link to="/addCourse"><button className='a'>Add Course</button></Link>

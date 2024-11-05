@@ -39,7 +39,7 @@ const ListInstructor = () => {
 
   return (
     // <div className="just-center">
-    <div className='list add flex-col'>
+    <div className='list add6 flex-col'>
       <div className='add-course6'>
         <span >All Instructor List</span>
         <Link to="/addInstructor"><button className='a'>Add Instructor</button></Link>

@@ -1,6 +1,6 @@
 .owl-prev, .owl-next {
   position: absolute;
-  left: 20px; /* Distance from the left edge for both buttons */
+  /* Distance from the left edge for both buttons */
   background-color: transparent; /* Transparent background */
   border: 2px solid #fff; /* White border */
   width: 40px; /* Button size */
@@ -15,7 +15,7 @@
   margin-bottom: 10px; /* Space between the buttons */
   top: 30%; /* Adjust top for initial positioning */
   transform: translateY(-100%); /* Moves the first button up */
-  left:50%;
+  left:-70%;
 }
 
 .owl-next {
@@ -27,4 +27,30 @@
 
 .owl-prev i, .owl-next i {
   font-size: 18px; /* Adjust the icon size */
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .owl-prev, .owl-next {
+    width: 35px; /* Smaller button size for mobile */
+    height: 35px; /* Smaller height */
+  }
+
+  .owl-prev i, .owl-next i {
+    font-size: 16px; /* Smaller icon size for mobile */
+  }
+}
+
+@media (max-width: 576px) {
+  .owl-next{
+    top:150%;
+  }
+  .owl-prev, .owl-next {
+    width: 30px; /* Even smaller button size */
+    height: 30px; /* Even smaller height */
+    /* top:150%; */
+  }
+
+  .owl-prev i, .owl-next i {
+    font-size: 14px; /* Smallest icon size */
+  }
 }

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from "axios";
 import { toast } from 'react-toastify';
-import './AddContact.css';
+
 
 const AddContact = () => {
     const url = "http://localhost:4300";

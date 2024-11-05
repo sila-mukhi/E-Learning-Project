@@ -42,7 +42,7 @@ const ListCarousel = () => {
   }, []);
 
   return (
-    <div className='list add flex-col'>
+    <div className='list add1 flex-col'>
       <div className='add-course'>
         <span>All Carousel List</span>
         <Link to="/addCarousel"><button className='a'>Add Carousel</button></Link>

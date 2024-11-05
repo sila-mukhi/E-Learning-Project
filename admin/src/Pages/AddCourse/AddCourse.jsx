@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import './AddCourse.css'
 import { assets } from '../../assets/assets'
 import axios from "axios"
 import { toast } from 'react-toastify'

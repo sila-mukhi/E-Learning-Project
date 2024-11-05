@@ -39,7 +39,7 @@ const ListCategory = () => {
 
   return (
     // <div className="just-center3">
-    <div className='list add flex-col'>
+    <div className='list add3 flex-col'>
       <div className='add-course'>
       <span >All Foods List</span>
       <Link to="/addCategory"><button className='a'>List Category</button></Link>

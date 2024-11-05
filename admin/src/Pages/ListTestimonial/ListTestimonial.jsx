@@ -40,7 +40,7 @@ const ListTestimonial = () => {
 
   return (
     // <div className="just-center">
-    <div className='list add flex-col'>
+    <div className='list add4 flex-col'>
       <div className='list-course'>
         <span >All Testmonial List</span>
         <Link to="/addTestimonial"><button className='a'>Add Testmonial</button></Link>

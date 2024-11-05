@@ -40,7 +40,7 @@ const ListContact = () => {
     }, []);
 
     return (
-        <div className='list5 add flex-col'>
+        <div className='list5 add5 flex-col'>
             <div className='add-course5'>
                 <span>All Verified Contacts List</span>
                 <Link to="/addContact"><button className='a'>Add Contact</button></Link>
