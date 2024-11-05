@@ -3,7 +3,7 @@ import { assets } from '../../assets/assets'
 import axios from "axios"
 import { toast } from 'react-toastify'
 const AddInstructor = () => {
-    const url = "http://localhost:4300";
+    const url = "https://e-learning-project-backend.onrender.com";
     const [image, setImage] = useState(false);
     const [data, setData] = useState({
         name: "",
