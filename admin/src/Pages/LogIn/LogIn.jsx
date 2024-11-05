@@ -16,7 +16,7 @@ const LogIn = () => {
 
     const handleLogin = async () => {
         console.log(email, password);
-        let result = await fetch('http://localhost:4300/api/users/login', {
+        let result = await fetch('https://e-learning-project-backend.onrender.com/api/users/login', {
             method: "post",
             body: JSON.stringify({ email, password }),
             headers: {
