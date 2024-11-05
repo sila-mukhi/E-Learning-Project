@@ -13,7 +13,7 @@ const EditCarousel = () => {
   const [image, setImage] = useState(null); // For the new image
   const [currentImage, setCurrentImage] = useState(''); // For displaying the current image
   const navigate = useNavigate();
-  const url = "http://localhost:4300";
+  const url = "https://e-learning-project-backend.onrender.com";
 
   // Fetch course data by ID
   useEffect(() => {
