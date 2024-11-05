@@ -37,7 +37,7 @@ const About = () => {
                             <p className="mb-0"><i className="fa fa-arrow-right text-primary me-2"></i>International Certificate</p>
                         </div>
                     </div>
-                    <a className="btn btn-primary py-3 px-5 mt-2" href="">Read More</a>
+                    <a className="btn btn-primary py-3 px-5 mt-2" href="#">Read More</a>
                 </div>
             </div>
         </div>

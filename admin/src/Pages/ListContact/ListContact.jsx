@@ -4,8 +4,8 @@ import axios from "axios";
 import { toast } from "react-toastify";
 import { Link } from 'react-router-dom';
 
-const ListContact = () => {
-    const url = "http://localhost:4300";
+const ListContact = ({url}) => {
+    // const url = "http://localhost:4300";
     const [contact, setContact] = useState([]);
 
     const fetchContacts = async () => {

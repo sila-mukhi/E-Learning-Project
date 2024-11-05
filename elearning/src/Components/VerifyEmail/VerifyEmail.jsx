@@ -14,7 +14,7 @@ const VerifyEmail = () => {
 
         const verifyEmail = async () => {
             try {
-                const response = await axios.get(`http://localhost:4300/api/contacts/verify-email?token=${token}`);
+                const response = await axios.get(`https://e-learning-project-backend.onrender.com/api/contacts/verify-email?token=${token}`);
                 setMessage(response.data.message);
             } catch (error) {
                 console.error("Verification error:", error);

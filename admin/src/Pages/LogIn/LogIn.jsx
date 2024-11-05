@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import './LogIn.css';
 import { useNavigate } from "react-router-dom";
 
-const LogIn = () => {
+const LogIn = ({url}) => {
     const [email, setEmail] = React.useState('');
     const [password, setPassword] = React.useState('');
     const navigate = useNavigate();
@@ -16,7 +16,7 @@ const LogIn = () => {
 
     const handleLogin = async () => {
         console.log(email, password);
-        let result = await fetch('http://localhost:4300/api/users/login', {
+        let result = await fetch(`${url}/api/users/login`, {
             method: "post",
             body: JSON.stringify({ email, password }),
             headers: {

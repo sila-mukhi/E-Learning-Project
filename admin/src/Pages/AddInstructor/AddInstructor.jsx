@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react'
 import { assets } from '../../assets/assets'
 import axios from "axios"
 import { toast } from 'react-toastify'
-const AddInstructor = () => {
-    const url = "http://localhost:4300";
+const AddInstructor = ({url}) => {
+    // const url = "http://localhost:4300";
     const [image, setImage] = useState(false);
     const [data, setData] = useState({
         name: "",

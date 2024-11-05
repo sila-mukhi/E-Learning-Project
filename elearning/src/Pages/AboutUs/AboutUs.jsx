@@ -4,7 +4,7 @@ import About from '../../Components/About/About';
 import TeamSection from '../../Components/Team/Team';
 
 
-const About_us = () => {
+const AboutUs = () => {
   const backgroundStyle = {
     background: 'linear-gradient(rgba(24, 29, 56, .7), rgba(24, 29, 56, .7)), url("../../src/assets/carousel_1.jpg)',
     backgroundPosition: 'Center center',
@@ -37,4 +37,4 @@ const About_us = () => {
   )
 }
 
-export default About_us
+export default AboutUs

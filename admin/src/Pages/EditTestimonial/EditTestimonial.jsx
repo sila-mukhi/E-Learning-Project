@@ -4,7 +4,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import "./EditTestimonial.css"
 
-const EditTestimonial = () => {
+const EditTestimonial = ({url}) => {
   const { id } = useParams(); // Get course ID from URL parameters
   const [testimonial, setTestimonial] = useState({
     name: '',
@@ -15,7 +15,7 @@ const EditTestimonial = () => {
   const [image, setImage] = useState(null); // For the new image
   const [currentImage, setCurrentImage] = useState(''); // For displaying the current image
   const navigate = useNavigate();
-  const url = "http://localhost:4300";
+  // const url = "http://localhost:4300";
 
   // Fetch course data by ID
   useEffect(() => {

@@ -26,7 +26,7 @@ import Profile from './Pages/Profile/Profile';
 import ChangePassword from './Pages/ChangePassword/ChangePassword';
 
 const App = () => {
-  const url = "http://localhost:4300";
+  const url = "https://e-learning-project-backend.onrender.com";
   return (
     <>
       <div>
@@ -36,27 +36,27 @@ const App = () => {
         <div className="app-content">
           <Routes>
             <Route element={<PrivateComponent />}>
-              <Route path="/addCarousel" element={<AddCarousel />} />
-              <Route path="/listCarousel" element={<ListCarousel />} />
+              <Route path="/addCarousel" element={<AddCarousel url={url}/>} />
+              <Route path="/listCarousel" element={<ListCarousel url={url}/>} />
               <Route path="/addCourse" element={<AddCourse url={url} />} />
               <Route path="/listCourse" element={<ListCourse url={url} />} />
-              <Route path="/addInstructor" element={<AddInstructor />} />
-              <Route path="/listInstructor" element={<ListInstructor />} />
-              <Route path="/addCategory" element={<AddCategory />} />
-              <Route path="/listCategory" element={<ListCategory />} />
-              <Route path="/editCourse/:id" element={<EditCourse />} />
-              <Route path="/editInstructor/:id" element={<EditInstructor />} />
-              <Route path="/editCategory/:id" element={<EditCategory />} />
-              <Route path="/editTestimonial/:id" element={<EditTestimonial />} />
-              <Route path="/editCarousel/:id" element={<EditCarousel />} />
-              <Route path="/listContact" element={<ListContact />} />
-              <Route path="/addContact" element={<AddContact />} />
-              <Route path="/listTestimonial" element={<ListTestimonial />} />
-              <Route path="/addTestimonial" element={<AddTestimonial />} />
-              <Route path="/profile" element={<Profile />} />
-              <Route path="/changePassword" element={<ChangePassword />} />
+              <Route path="/addInstructor" element={<AddInstructor url={url}/>} />
+              <Route path="/listInstructor" element={<ListInstructor url={url} />} />
+              <Route path="/addCategory" element={<AddCategory url={url}/>} />
+              <Route path="/listCategory" element={<ListCategory url={url}/>} />
+              <Route path="/editCourse/:id" element={<EditCourse url={url}/>} />
+              <Route path="/editInstructor/:id" element={<EditInstructor url={url}/>} />
+              <Route path="/editCategory/:id" element={<EditCategory url={url}/>} />
+              <Route path="/editTestimonial/:id" element={<EditTestimonial url={url}/>} />
+              <Route path="/editCarousel/:id" element={<EditCarousel url={url}/>} />
+              <Route path="/listContact" element={<ListContact url={url}/>} />
+              <Route path="/addContact" element={<AddContact url={url}/>} />
+              <Route path="/listTestimonial" element={<ListTestimonial url={url}/>} />
+              <Route path="/addTestimonial" element={<AddTestimonial url={url}/>} />
+              <Route path="/profile" element={<Profile url={url}/>} />
+              <Route path="/changePassword" element={<ChangePassword url={url}/>} />
             </Route>
-            <Route path="/LogIn" element={<LogIn />} />
+            <Route path="/LogIn" element={<LogIn url={url} />} />
           </Routes>
         </div>
       </div>

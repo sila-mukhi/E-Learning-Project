@@ -1,5 +1,5 @@
 import React from 'react'
-import Contact_us from '../../Components/Contact_us/Contact_us'
+import ContactUs from '../../Components/ContactUs/ContactUs'
 
 const Contact = () => {
   return (
@@ -21,7 +21,7 @@ const Contact = () => {
             </div>
         </div>
     </div>
-    <Contact_us/>
+    <ContactUs/>
     </>
   )
 }

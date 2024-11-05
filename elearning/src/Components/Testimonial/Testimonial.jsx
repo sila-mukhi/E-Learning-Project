@@ -7,7 +7,7 @@ const TestimonialSection = () => {
   const [testimonials, setTestimonials] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  const url = "http://localhost:4300";
+  const url = "https://e-learning-project-backend.onrender.com";
 
   const options = {
     loop: true,

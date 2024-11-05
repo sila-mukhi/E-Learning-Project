@@ -1,7 +1,7 @@
 import React from 'react'
 import TestimonialSection from '../../Components/Testimonial/Testimonial'
 
-const Testiminal_Page = () => {
+const TestimonialPage = () => {
     return (
         <div>
             <div className="container-fluid bg-primary py-5 mb-5 page-header">
@@ -25,4 +25,4 @@ const Testiminal_Page = () => {
     )
 }
 
-export default Testiminal_Page
+export default TestimonialPage

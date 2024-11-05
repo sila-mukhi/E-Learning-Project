@@ -4,9 +4,9 @@ import axios from "axios"
 import { toast } from "react-toastify"
 import { Link } from 'react-router-dom'
 
-const ListInstructor = () => {
+const ListInstructor = ({url}) => {
 
-  const url = "http://localhost:4300";
+  // const url = "http://localhost:4300";
 
   const [instructor, setInstructor] = useState([]);
 

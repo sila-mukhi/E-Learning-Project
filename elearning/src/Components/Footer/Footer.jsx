@@ -10,11 +10,11 @@ const Footer = () => {
         <div className="row g-5">
           <div className="col-lg-3 col-md-6">
             <h4 className="text-white mb-3">Quick Link</h4>
-            <a className="btn btn-link" href="">About Us</a>
-            <a className="btn btn-link" href="">Contact Us</a>
-            <a className="btn btn-link" href="">Privacy Policy</a>
-            <a className="btn btn-link" href="">Terms & Condition</a>
-            <a className="btn btn-link" href="">FAQs & Help</a>
+            <a className="btn btn-link" href="#">About Us</a>
+            <a className="btn btn-link" href="#">Contact Us</a>
+            <a className="btn btn-link" href="#">Privacy Policy</a>
+            <a className="btn btn-link" href="#">Terms & Condition</a>
+            <a className="btn btn-link" href="#">FAQs & Help</a>
           </div>
           <div className="col-lg-3 col-md-6">
             <h4 className="text-white mb-3">Contact</h4>
@@ -22,10 +22,10 @@ const Footer = () => {
             <p className="mb-2"><FaPhoneAlt className="me-3" />+012 345 67890</p>
             <p className="mb-2"><FaEnvelope className="me-3" />info@example.com</p>
             <div className="d-flex pt-2">
-              <a className="btn btn-outline-light btn-social" href=""><FaTwitter /></a>
-              <a className="btn btn-outline-light btn-social" href=""><FaFacebookF /></a>
-              <a className="btn btn-outline-light btn-social" href=""><FaYoutube /></a>
-              <a className="btn btn-outline-light btn-social" href=""><FaLinkedinIn /></a>
+              <a className="btn btn-outline-light btn-social" href="#"><FaTwitter /></a>
+              <a className="btn btn-outline-light btn-social" href="#"><FaFacebookF /></a>
+              <a className="btn btn-outline-light btn-social" href="#"><FaYoutube /></a>
+              <a className="btn btn-outline-light btn-social" href="#"><FaLinkedinIn /></a>
             </div>
           </div>
           <div className="col-lg-3 col-md-6">
@@ -72,10 +72,10 @@ const Footer = () => {
             </div>
             <div className="col-md-6 text-center text-md-end">
               <div className="footer-menu">
-                <a href="">Home</a>
-                <a href="">Cookies</a>
-                <a href="">Help</a>
-                <a href="">FQAs</a>
+                <a href="#">Home</a>
+                <a href="#">Cookies</a>
+                <a href="#">Help</a>
+                <a href="#">FQAs</a>
               </div>
             </div>
           </div>

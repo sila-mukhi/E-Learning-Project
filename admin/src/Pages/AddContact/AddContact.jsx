@@ -3,8 +3,8 @@ import axios from "axios";
 import { toast } from 'react-toastify';
 
 
-const AddContact = () => {
-    const url = "http://localhost:4300";
+const AddContact = ({url}) => {
+    // const url = "http://localhost:4300";
     
     const [data, setData] = useState({
         name: "",

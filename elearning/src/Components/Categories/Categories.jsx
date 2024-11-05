@@ -5,7 +5,7 @@ import axios from "axios";
 
 const CourseCategories = () => {
   const [categories, setCategories] = useState([]);
-  const url = "http://localhost:4300";
+  const url = "https://e-learning-project-backend.onrender.com";
 
   useEffect(() => {
     const wow = new WOW.WOW();

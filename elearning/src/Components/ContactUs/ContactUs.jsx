@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { toast } from 'react-toastify';
 
-const Contact_us = () => {
+const ContactUs = () => {
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -34,7 +34,7 @@ const Contact_us = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch('http://localhost:4300/api/contacts/addContact', {
+            const response = await fetch('https://e-learning-project-backend.onrender.com/api/contacts/addContact', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -101,6 +101,7 @@ const Contact_us = () => {
                             allowFullScreen
                             aria-hidden="false"
                             tabIndex="0"
+                            title="location"
                         ></iframe>
                     </div>
                     <div className="col-lg-4 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
@@ -183,6 +184,6 @@ const Contact_us = () => {
     );
 };
 
-export default Contact_us;
+export default ContactUs;
 
 
