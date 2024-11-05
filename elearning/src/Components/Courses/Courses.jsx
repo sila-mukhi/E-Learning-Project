@@ -6,7 +6,7 @@ import axios from 'axios';
 
 const PopularCourses = () => {
   const [courses, setCourses] = useState([]);
-  const url = "http://localhost:4300"; // Base URL for API
+  const url = "https://e-learning-project-backend.onrender.com"; // Base URL for API
 
   // Initialize WOW.js for animations
   useEffect(() => {
