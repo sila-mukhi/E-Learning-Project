@@ -26,7 +26,7 @@ import Profile from './Pages/Profile/Profile';
 import ChangePassword from './Pages/ChangePassword/ChangePassword';
 
 const App = () => {
-  const url = "http://localhost:4300";
+  const url = "https://e-learning-project-backend.onrender.com";
   return (
     <>
       <div>
