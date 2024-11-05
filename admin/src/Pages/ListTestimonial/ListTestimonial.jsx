@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 
 const ListTestimonial = () => {
 
-  const url = "http://localhost:4300";
+  const url = "https://e-learning-project-backend.onrender.com";
 
   const [testimonial, setTestimonial] = useState([]);
 
