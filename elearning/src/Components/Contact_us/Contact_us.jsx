@@ -34,7 +34,7 @@ const Contact_us = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch('http://localhost:4300/api/contacts/addContact', {
+            const response = await fetch('https://e-learning-project-backend.onrender.com/api/contacts/addContact', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
