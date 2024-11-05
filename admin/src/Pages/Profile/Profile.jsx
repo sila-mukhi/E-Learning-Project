@@ -9,7 +9,7 @@ const Profile = () => {
     const fetchProfile = async () => {
         try {
             const token = localStorage.getItem("token"); // Get the token from localStorage
-            const response = await axios.get('http://localhost:4300/api/users/profile', {
+            const response = await axios.get('https://e-learning-project-backend.onrender.com/api/users/profile', {
                 headers: {
                     Authorization: `Bearer ${token}` // Include the token in the Authorization header
                 }
