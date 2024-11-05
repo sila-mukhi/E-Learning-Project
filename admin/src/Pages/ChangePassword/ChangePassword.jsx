@@ -27,7 +27,7 @@ const ChangePassword = () => {
         setLoading(true); // Start loading
 
         try {
-            const response = await axios.put('http://localhost:4300/api/users/changePassword', {
+            const response = await axios.put('https://e-learning-project-backend.onrender.com/api/users/changePassword', {
                 oldPassword,
                 newPassword
             }, { headers: { Authorization:`Bearer ${localStorage.getItem('token')}` } });
