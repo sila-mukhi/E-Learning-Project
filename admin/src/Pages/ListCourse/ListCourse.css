@@ -1,6 +1,6 @@
 .list-table-format1{
     display: grid;
-    grid-template-columns: repeat(9,1fr);
+    grid-template-columns: repeat(11,1fr);
     align-items: center;
     gap:20px;
     padding: 12px 15px;
