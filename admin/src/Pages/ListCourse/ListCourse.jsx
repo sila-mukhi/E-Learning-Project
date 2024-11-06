@@ -56,6 +56,8 @@ const ListCourse = ({ url }) => {
           <b>Title</b>
           <b>Instructor</b>
           <b>Students</b>
+          <b>Description</b>
+          <b>Language</b>
           <b>Action</b>
           <b>Edit</b>
         </div>
@@ -68,6 +70,8 @@ const ListCourse = ({ url }) => {
             <p>{item.title}</p>
             <p>{item.instructor}</p>
             <p>{item.students}</p>
+            <p>{item.description}</p>
+            <p>{item.language}</p>
             <p onClick={() => removeCourse(item._id)} className='cursor'>x</p>
             <Link to={`/editCourse/${item._id}`} className='cursor'>Edit</Link>
           </div>
