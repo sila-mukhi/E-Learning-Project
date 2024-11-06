@@ -3,6 +3,7 @@ import WOW from 'wowjs';
 import 'animate.css';
 import { FaUserTie, FaClock, FaUser, FaStar } from 'react-icons/fa'; // FontAwesome icons
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 const PopularCourses = () => {
   const [courses, setCourses] = useState([]);
@@ -53,9 +54,9 @@ const PopularCourses = () => {
 
 
                     <div className="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
-                      <a href="#" className="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style={{ borderRadius: '30px 0 0 30px' }}>
+                    <Link to={`/course-detail/${course._id}`} className="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style={{ borderRadius: '30px 0 0 30px' }}>
                         Read More
-                      </a>
+                      </Link>
                       <a href="#" className="flex-shrink-0 btn btn-sm btn-primary px-3" style={{ borderRadius: '0 30px 30px 0' }}>
                         Join Now
                       </a>
@@ -74,7 +75,7 @@ const PopularCourses = () => {
                   <div className="d-flex border-top">
                     <small className="flex-fill text-center border-end py-2">
                       <FaUserTie className="text-primary me-2" />
-                      {course.instructor}
+                      {course.instructor} 
                     </small>
                     <small className="flex-fill text-center border-end py-2">
                       <FaClock className="text-primary me-2" />

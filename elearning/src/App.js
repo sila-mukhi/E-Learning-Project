@@ -12,6 +12,7 @@ import SuccessVerification from './Components/SuccessVerification/SuccessVerific
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import AboutUs from './Pages/AboutUs/AboutUs';
+import CourseDetail from './Pages/CourseDetail/CourseDetail';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path="/error" element={<Error />} />
         <Route path="/verify-email" element={<VerifyEmail />} /> {/* Changed to lowercase */}
         <Route path="/success-verification" element={<SuccessVerification/>}/>
+        <Route path="/course-detail/:id" element={<CourseDetail/>}/>
       </Routes>
       
       <Footer/>
