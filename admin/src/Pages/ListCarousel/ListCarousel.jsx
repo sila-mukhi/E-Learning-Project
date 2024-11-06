@@ -4,8 +4,8 @@ import axios from "axios";
 import { toast } from "react-toastify";
 import { Link } from 'react-router-dom';
 
-const ListCarousel = ({url}) => {
-  // const url = "http://localhost:4300";
+const ListCarousel = () => {
+  const url = "https://e-learning-project-backend.onrender.com";
   const [carousel, setCarousel] = useState([]);
 
   const fetchCarousels = async () => {

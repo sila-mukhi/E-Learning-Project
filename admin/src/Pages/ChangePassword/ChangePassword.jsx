@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import "./ChangePassword.css"
 
-const ChangePassword = ({url}) => {
+const ChangePassword = () => {
     const [oldPassword, setOldPassword] = useState('');
     const [newPassword, setNewPassword] = useState('');
     const [message, setMessage] = useState('');
@@ -27,7 +27,7 @@ const ChangePassword = ({url}) => {
         setLoading(true); // Start loading
 
         try {
-            const response = await axios.put(`${url}/api/users/changePassword`, {
+            const response = await axios.put('https://e-learning-project-backend.onrender.com/api/users/changePassword', {
                 oldPassword,
                 newPassword
             }, { headers: { Authorization:`Bearer ${localStorage.getItem('token')}` } });

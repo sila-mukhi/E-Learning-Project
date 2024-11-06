@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import './LogIn.css';
 import { useNavigate } from "react-router-dom";
 
-const LogIn = ({url}) => {
+const LogIn = () => {
     const [email, setEmail] = React.useState('');
     const [password, setPassword] = React.useState('');
     const navigate = useNavigate();
@@ -16,7 +16,7 @@ const LogIn = ({url}) => {
 
     const handleLogin = async () => {
         console.log(email, password);
-        let result = await fetch(`${url}/api/users/login`, {
+        let result = await fetch('https://e-learning-project-backend.onrender.com/api/users/login', {
             method: "post",
             body: JSON.stringify({ email, password }),
             headers: {

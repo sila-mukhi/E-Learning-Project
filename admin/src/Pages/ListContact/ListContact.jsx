@@ -4,8 +4,8 @@ import axios from "axios";
 import { toast } from "react-toastify";
 import { Link } from 'react-router-dom';
 
-const ListContact = ({url}) => {
-    // const url = "http://localhost:4300";
+const ListContact = () => {
+    const url = "https://e-learning-project-backend.onrender.com";
     const [contact, setContact] = useState([]);
 
     const fetchContacts = async () => {

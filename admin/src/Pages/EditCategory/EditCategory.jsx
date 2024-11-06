@@ -4,7 +4,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import "./EditCategory.css"
 
-const EditCategory = ({url}) => {
+const EditCategory = () => {
   const { id } = useParams(); // Get course ID from URL parameters
   const [category, setCategory] = useState({
     title: '',
@@ -14,7 +14,7 @@ const EditCategory = ({url}) => {
   const [image, setImage] = useState(null); // For the new image
   const [currentImage, setCurrentImage] = useState(''); // For displaying the current image
   const navigate = useNavigate();
-  // const url = "http://localhost:4300";
+  const url = "https://e-learning-project-backend.onrender.com";
 
   // Fetch course data by ID
   useEffect(() => {

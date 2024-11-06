@@ -9,8 +9,7 @@ import "./Carousel1.css";
 const Carousel = () => {
   const [carousel, setCarousel] = useState([]);
   const [loading, setLoading] = useState(true);
-  // const url = "http://localhost:4300";
-  const url ="https://e-learning-project-backend.onrender.com";
+  const url = "https://e-learning-project-backend.onrender.com";
 
   const options = {
     items: 1,

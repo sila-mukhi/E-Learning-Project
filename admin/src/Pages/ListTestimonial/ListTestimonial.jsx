@@ -5,9 +5,9 @@ import axios from "axios"
 import { toast } from "react-toastify"
 import { Link } from 'react-router-dom'
 
-const ListTestimonial = ({url}) => {
+const ListTestimonial = () => {
 
-  // const url = "http://localhost:4300";
+  const url = "https://e-learning-project-backend.onrender.com";
 
   const [testimonial, setTestimonial] = useState([]);
 
