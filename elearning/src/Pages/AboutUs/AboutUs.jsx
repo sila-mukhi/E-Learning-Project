@@ -6,16 +6,11 @@ import { assets } from '../../assets/assets';
 
 
 const AboutUs = () => {
-//   const backgroundStyle = {
-//     background: 'linear-gradient(rgba(24, 29, 56, .7), rgba(24, 29, 56, .7)), url("../../src/assets/carousel_1.jpg)',
-//     backgroundPosition: 'Center center',
-//     backgroundRepeat: 'no-repeat',
-//     backgroundSize:'cover'
-// }
+
   return (
     // <!-- Header Start -->
     <>
-    <div className="container-fluid bg-primary py-5 mb-5 page-header"style={{ backgroundImage: `url(${assets.carousel_1})`}}>
+    <div className="container-fluid bg-primary py-5 mb-5 page-header" style={{  background: linear-gradient(rgba(24, 29, 56, .7), rgba(24, 29, 56, .7)),`url(${assets.carousel_1})`}}>
         <div className="container py-5">
             <div className="row justify-content-center">
                 <div className="col-lg-10 text-center">
