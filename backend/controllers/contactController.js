@@ -21,7 +21,7 @@ const addContact = async (req, res) => {
     try {
         // Generate verification link
         // const verificationLink = `${req.protocol}://${req.get('host')}/api/contacts/verify-email?token=${verificationToken}`;
-        const verificationLink = `http://e-learning-project-frontend.onrender.com/verify-email?token=${verificationToken}`;
+        const verificationLink = `http://e-learning-project-backend.onrender.com/verify-email?token=${verificationToken}`;
 
         // Send verification email
         await sendEmail(
@@ -76,7 +76,7 @@ const verifyEmail = async (req, res) => {
 
         await contact.save();
 
-        const frontendUrl = process.env.FRONTEND_URL || 'http://localhost:3000';
+        const frontendUrl = process.env.FRONTEND_URL || 'https://e-learning-project-frontend.onrender.com';
         return res.redirect(`${frontendUrl}/success-verification?verified=true`);
     } catch (error) {
         console.error("Verification error:", error);
