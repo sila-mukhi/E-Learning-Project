@@ -76,7 +76,7 @@ const verifyEmail = async (req, res) => {
 
         await contact.save();
 
-        const frontendUrl = process.env.FRONTEND_URL || 'https://e-learning-project-frontend.onrender.com';
+        const frontendUrl ='https://e-learning-project-frontend.onrender.com';
         return res.redirect(`${frontendUrl}/success-verification?verified=true`);
     } catch (error) {
         console.error("Verification error:", error);
