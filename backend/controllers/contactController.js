@@ -20,8 +20,9 @@ const addContact = async (req, res) => {
 
     try {
         // Generate verification link
-        const verificationLink = `${req.protocol}://${req.get('host')}/api/contacts/verify-email?token=${verificationToken}`;
-        
+        // const verificationLink = `${req.protocol}://${req.get('host')}/api/contacts/verify-email?token=${verificationToken}`;
+        const verificationLink = `http://e-learning-project-frontend.onrender.com/verify-email?token=${verificationToken}`;
+
         // Send verification email
         await sendEmail(
             req.body.email,
