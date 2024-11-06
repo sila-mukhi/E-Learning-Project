@@ -12,7 +12,9 @@ const EditCourse = () => {
     reviews: '',
     title: '',
     instructor: '',
-    students: ''
+    students: '',
+    description:'',
+    language:[],
   });
   const [image, setImage] = useState(null); // For the new image
   const [currentImage, setCurrentImage] = useState(''); // For displaying the current image
@@ -69,6 +71,8 @@ const EditCourse = () => {
     formData.append('title', course.title);
     formData.append('instructor', course.instructor);
     formData.append('students', course.students);
+    formData.append('description',course.description);
+    formData.append('language',JSON.stringify(course.language));
 
     try {
       const response = await axios.put(`${url}/api/courses/updateCourse/${id}`, formData);
@@ -130,6 +134,32 @@ const EditCourse = () => {
           <p>Students</p>
           <input type="text" name="students" value={course.students} onChange={handleInputChange} required />
         </div>
+
+           <div className='edit1-product-name flex-col'>
+          <p>Description</p>
+          <input onChange={handleInputChange} value={course.description} type='text' name='description'  required />
+        </div>
+        
+        <div className='edit1-product-name flex-col'>
+          <p>Language</p>
+          <select
+            
+            name='language'
+            value={course.language}
+            onChange={handleInputChange}
+        
+          >
+            <option value='html'>HTML</option>
+            <option value='css'>CSS</option>
+            <option value='javascript'>Javascript</option>
+            <option value='seo'>SEO</option>
+            <option value='photoshop'>Photoshop</option>
+            <option value='react'>React.js</option>
+            <option value='node'>Node</option>
+            <option value='mongo'>Mongo</option>
+          </select>
+        </div>
+        
         <button type="submit" className='update-btn1'>Update Course</button>
       </form>
     </div>
