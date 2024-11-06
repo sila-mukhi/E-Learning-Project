@@ -2,12 +2,13 @@ import React from 'react'
 import CourseCategories from '../../Components/Categories/Categories';
 import PopularCourses from '../../Components/Courses/Courses';
 import TestimonialSection from '../../Components/Testimonial/Testimonial';
+import { assets } from '../../assets/assets';
 
 const Courses = () => {
   return (
     // <!-- Header Start -->
     <>
-    <div className="container-fluid bg-primary py-5 mb-5 page-header">
+    <div className="container-fluid bg-primary py-5 mb-5 page-header" style={{  background: linear-gradient(rgba(24, 29, 56, .7), rgba(24, 29, 56, .7)),`url(${assets.carousel_1})`}}>
         <div className="container py-5">
             <div className="row justify-content-center">
                 <div className="col-lg-10 text-center">
