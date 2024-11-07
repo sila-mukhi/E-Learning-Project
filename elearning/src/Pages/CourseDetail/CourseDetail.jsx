@@ -21,38 +21,67 @@ const CourseDetail = () => {
   }, [id]);
 
   return (
-    <div className="container d-flex justify-content-center align-items-center p-5" style={{ minHeight: "100vh" }}>
+    <div className="container mt-5" style={{ backgroundColor: "#f5f5f5" }}>
       {course ? (
-        <div className="card p-4 shadow-lg" style={{ maxWidth: "600px", width: "100%", borderRadius: "10px" }}>
-          <img 
-            className="card-img-top mb-4 rounded" 
-            src={`${url}/images/${course.image}`} 
-            alt={course.title} 
-            style={{ borderRadius: "10px", objectFit: "cover", maxHeight: "300px" }} 
-          />
-          <div className="card-body">
-            <h2 className="card-title mb-3">{course.title}</h2>
-            <p><strong>Price:</strong> ${course.price}</p>
-            <p><strong>Rating:</strong> {course.rating} / 5</p>
-            <p><strong>Reviews:</strong> {course.reviews}</p>
-            <p><strong>Instructor:</strong> {course.instructor}</p>
-            <p><strong>Students Enrolled:</strong> {course.students}</p>
-            <p><strong>Description:</strong> {course.description}</p>
-            <p><strong>Languages:</strong></p>
-            <ul className="list-unstyled mb-4">
-              {Array.isArray(course.language) ? (
-                course.language.map((lang, index) => (
-                  <li key={index}>• {lang}</li>
-                ))
-              ) : (
-                <li>No languages available</li>
-              )}
-            </ul>
-            <a href="#" className="btn btn-primary btn-block">Join Now</a>
+        <div className="row">
+          {/* Left side: Course Image */}
+          <div className="col-md-5">
+            <div className="card border-0 shadow-sm">
+              <img 
+                src={`${url}/images/${course.image}`} 
+                alt={course.title} 
+                className="img-fluid rounded"
+                style={{ maxHeight: "400px", objectFit: "cover" }} 
+              />
+            </div>
+          </div>
+
+          {/* Right side: Course Information */}
+          <div className="col-md-7">
+            <div className="card p-4 shadow-sm" style={{ borderRadius: "10px" }}>
+              <h2 className="card-title mb-3" style={{ fontSize: "24px", fontWeight: "600", color: "#333" }}>
+                {course.title}
+              </h2>
+
+              <div className="d-flex justify-content-between align-items-center mb-3">
+                <div>
+                  <p style={{ fontWeight: "500", fontSize: "18px", color: "#ff7f00" }}>${course.price}</p>
+                </div>
+                <div>
+                  <p className="text-muted" style={{ fontSize: "16px" }}>
+                    <strong>{course.rating}</strong> / 5
+                  </p>
+                </div>
+              </div>
+
+              <p><strong>Instructor:</strong> {course.instructor}</p>
+              <p><strong>Students Enrolled:</strong> {course.students}</p>
+
+              <p><strong>Description:</strong> {course.description}</p>
+              
+              <div className="mb-3">
+                <strong>Languages:</strong>
+                <ul className="list-unstyled">
+                  {Array.isArray(course.language) ? (
+                    course.language.map((lang, index) => (
+                      <li key={index}>• {lang}</li>
+                    ))
+                  ) : (
+                    <li>No languages available</li>
+                  )}
+                </ul>
+              </div>
+
+              <button className="btn btn-primary btn-lg w-100" style={{ borderRadius: "25px", padding: "12px 20px" }}>
+                Join Now
+              </button>
+            </div>
           </div>
         </div>
       ) : (
-        <p>Loading course details...</p>
+        <div className="text-center" style={{ fontSize: "18px", color: "#888" }}>
+          Loading course details...
+        </div>
       )}
     </div>
   );
