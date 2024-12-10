@@ -99,9 +99,10 @@ const CourseDetail = () => {
                   </ul>
                 </div>
 
-                <button className="btn btn-primary btn-lg w-100" style={{ borderRadius: "25px", padding: "12px 20px" }}>
+               <Link to="/contact"> <button className="btn btn-primary btn-lg w-100" style={{ borderRadius: "25px", padding: "12px 20px" }}>
                   Join Now
                 </button>
+                </Link>
               </div>
             </div>
           </div>

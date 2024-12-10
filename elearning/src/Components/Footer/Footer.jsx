@@ -13,7 +13,7 @@ const Footer = () => {
             <h4 className="text-white mb-3">Quick Link</h4>
             <Link to="/">  <a className="btn btn-link" >Home</a></Link>
             <Link to="/about"><a className="btn btn-link" >About Us</a></Link>
-            <Link to="/course"><a className="btn btn-link" >Courses</a></Link>
+            <Link to="/courses"><a className="btn btn-link" >Courses</a></Link>
             <Link to="/contact"><a className="btn btn-link" >Contact Us</a></Link>
           </div>
           <div className="col-lg-3 col-md-6">
