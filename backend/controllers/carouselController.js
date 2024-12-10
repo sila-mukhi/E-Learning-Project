@@ -2,7 +2,7 @@ import carouselModel from "../models/carouselModel.js";
 import fs from "fs/promises";
 
 const addCarousel = async (req, res) => {
-    let image_filename = `${req.file.filename}`;
+    let image_filename = `${req.file.filename}`; 
 
     const carousels = new carouselModel({
         image: image_filename,

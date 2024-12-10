@@ -5,6 +5,7 @@ import OwlCarousel from 'react-owl-carousel';
 import WOW from 'wowjs';
 import axios from 'axios';
 import "./Carousel1.css";
+import {Link} from 'react-router-dom'
 
 const Carousel = () => {
   const [carousel, setCarousel] = useState([]);
@@ -69,8 +70,8 @@ const Carousel = () => {
                         <h5 className="text-primary text-uppercase mb-3 animated slideInDown">Best Online Courses</h5>
                         <h1 className="display-3 text-white animated slideInDown">{item.description}</h1>
                         <p className="fs-5 text-white mb-4 pb-2">{item.content}</p>
-                        <a href="#" className="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
-                        <a href="#" className="btn btn-light py-md-3 px-md-5 animated slideInRight">Join Now</a>
+                        <Link to="/about" className="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</Link>
+                        <Link to="/contact" className="btn btn-light py-md-3 px-md-5 animated slideInRight">Join Now</Link>
                       </div>
                     </div>
                   </div>

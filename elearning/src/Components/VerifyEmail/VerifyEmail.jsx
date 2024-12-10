@@ -38,7 +38,7 @@ const VerifyEmail = () => {
 
     return (
         <div className="valid-container">
-           <h1 className="valid-header">Email Verification</h1>
+            <h1 className="valid-header">Email Verification</h1>
             {loading ? (
                 <p className="valid-loading">Please wait while we verify your email...</p>
             ) : (

@@ -13,6 +13,7 @@ if (!fs.existsSync(carouselImageFolder)) {
 
 // Image storage engine
 const storage = multer.diskStorage({
+    
     destination: carouselImageFolder,
     filename: (req, file, cb) => {
         cb(null, `${Date.now()}${file.originalname}`);

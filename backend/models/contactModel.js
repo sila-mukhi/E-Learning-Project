@@ -8,7 +8,7 @@ const contactSchema = new mongoose.Schema({
     verificationToken: { type: String, required: false },
     tokenExpiry: { type: Date, required: false }, // Ensure this is defined
     isVerified: { type: Boolean, default: false } // Field to track verification status
-}, { timestamps: true }); // Optional: Add timestamps if needed
+}, { timestamps: true }); 
 
 const contactModel = mongoose.models.contacts || mongoose.model('Contacts', contactSchema);
 

@@ -49,7 +49,7 @@ const CourseCategories = () => {
                       <h5 className="m-0">{categories[0].title}</h5>
                       <small className="text-primary">{categories[0].coursesCount} Courses</small>
                     </div>
-                  </a>
+                  </a> 
                 )}
               </div>
 

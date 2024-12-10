@@ -34,7 +34,7 @@ const Navbar = () => {
                         Contact
                     </NavLink>
                 </div>
-                <a href="#" className="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Join Now<i className="fa fa-arrow-right ms-3"></i></a>
+                 <Link to="/contact" ><a className="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Join Now<i className="fa fa-arrow-right ms-3"></i></a></Link>
             </div>
         </nav>
         // <!-- Navbar End -->

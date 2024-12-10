@@ -30,10 +30,10 @@ const PopularCourses = () => {
         console.log("Failed to fetch data", error);
       }
     };
-  
+
     fetchCourses();
   }, []);
-   
+
 
   return (
     <div className="container-xxl py-5">
@@ -48,18 +48,14 @@ const PopularCourses = () => {
               <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay={`${index * 0.2}s`} key={course._id}>
                 <div className="course-item bg-light">
                   <div className="position-relative overflow-hidden">
-                    {/* <img className="img-fluid" src={course.imgSrc} alt={course.title} /> */}
-                    {/* <img className="img-fluid" src={`${url}/uploads/${course.image}`} alt={course.title} /> */}
                     <img className="img-fluid" src={`${url}/images/${course.image}`} alt={course.title} />
-
-
                     <div className="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
-                    <Link to={`/course-detail/${course._id}`} className="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style={{ borderRadius: '30px 0 0 30px' }}>
+                      <Link to={`/course-detail/${course._id}`} className="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style={{ borderRadius: '30px 0 0 30px' }}>
                         Read More
                       </Link>
-                      <a href="#" className="flex-shrink-0 btn btn-sm btn-primary px-3" style={{ borderRadius: '0 30px 30px 0' }}>
+                      <Link to="/contact" className="flex-shrink-0 btn btn-sm btn-primary px-3" style={{ borderRadius: '0 30px 30px 0' }}>
                         Join Now
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   <div className="text-center p-4 pb-0">
@@ -75,7 +71,7 @@ const PopularCourses = () => {
                   <div className="d-flex border-top">
                     <small className="flex-fill text-center border-end py-2">
                       <FaUserTie className="text-primary me-2" />
-                      {course.instructor} 
+                      {course.instructor}
                     </small>
                     <small className="flex-fill text-center border-end py-2">
                       <FaClock className="text-primary me-2" />
