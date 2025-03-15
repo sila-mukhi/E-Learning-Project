@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react'; 
 import './ListCourse.css';
 import axios from 'axios';
 import { toast } from 'react-toastify';
@@ -71,7 +71,28 @@ const ListCourse = ({ url }) => {
             <p>{item.instructor}</p>
             <p>{item.students}</p>
             <p>{item.description}</p>
-            <p>{item.language}</p>
+            <ul>
+  {(() => {
+    console.log("Language Data:", item.language);
+    let languages = [];
+
+    if (Array.isArray(item.language) && item.language.length > 0) {
+      try {
+        languages = JSON.parse(item.language[0]); // First element ko parse karna hoga
+      } catch (error) {
+        console.error("JSON Parse Error:", error);
+        languages = item.language; // Agar error aaye to original string dikhaye
+      }
+    }
+
+    return Array.isArray(languages) 
+      ? languages.map((lang, i) => <li key={i}>{lang}</li>) 
+      : <li>{languages}</li>;
+  })()}
+</ul>
+
+
+
             <p onClick={() => removeCourse(item._id)} className='cursor'>x</p>
             <Link to={`/editCourse/${item._id}`} className='cursor'>Edit</Link>
           </div>

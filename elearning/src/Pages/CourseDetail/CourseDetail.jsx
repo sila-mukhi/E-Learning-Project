@@ -86,18 +86,37 @@ const CourseDetail = () => {
 
                 <p><strong>Description:</strong> {course.description}</p>
 
-                <div className="mb-3">
+                {/* <div className="mb-3">
                   <strong>Languages:</strong>
-                  <ul className="list-unstyled">
+                  {/* <ul className="list-unstyled">
                     {Array.isArray(course.language) ? (
                       course.language.map((lang, index) => (
                         <li key={index}>• {lang}</li>
                       ))
                     ) : (
                       <li>No languages available</li>
-                    )}
-                  </ul>
-                </div>
+                    )} */}
+                  {/* </ul> */}
+                  {/* <ul>
+  {(() => {
+    console.log("Language Data:", course.language);
+    let languages = [];
+
+    if (Array.isArray(course.language) && course.language.length > 0) {
+      try {
+        languages = JSON.parse(course.language[0]); // First element ko parse karna hoga
+      } catch (error) {
+        console.error("JSON Parse Error:", error);
+        languages = course.language; // Agar error aaye to original string dikhaye
+      }
+    }
+
+    return Array.isArray(languages) 
+      ? languages.map((lang, i) => <li key={i}>{lang}</li>) 
+      : <li>{languages}</li>;
+  })()}
+</ul> */}
+                {/* </div> */} 
 
                <Link to="/contact"> <button className="btn btn-primary btn-lg w-100" style={{ borderRadius: "25px", padding: "12px 20px" }}>
                   Join Now

@@ -52,8 +52,8 @@ const updateCourse = async (req, res) => {
         title: req.body.title,
         instructor: req.body.instructor,
         students: req.body.students,
-        description: req.body.description,   // Added description
-        language: req.body.language          // Added language
+        description: req.body.description,   
+        language: req.body.language          
     };
 
     if (image_filename) {
